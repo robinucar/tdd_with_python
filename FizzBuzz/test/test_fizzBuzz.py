@@ -13,3 +13,7 @@ def test_returnsFizzWith3PassedIn():
 
 def test_returnsBuzzWith5PassedIn():
     checkFizzBuzz(5, "Buzz")
+
+# returns Fizz with multiple of 3
+def test_returnsFizzWith6PassedIn():
+    checkFizzBuzz(6, "Fizz")
