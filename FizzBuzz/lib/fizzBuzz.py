@@ -5,8 +5,10 @@ def fizzBuzz(num):
         return 'Buzz'
     return str(num)
 
+
 def isMultiple(value, mod):
     return (value % mod) == 0
+
 
 def checkFizzBuzz(value, expectedRetVal):
     retVal = fizzBuzz(value)
