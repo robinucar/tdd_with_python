@@ -1,4 +1,3 @@
-# Create instance of Checkout class
 from lib.Checkout import Checkout
 
 
@@ -7,3 +6,8 @@ from lib.Checkout import Checkout
 def test_CanAddItemPrice():
     co = Checkout()
     co.addItemPrice("a", 1)
+
+# Add Item
+def test_CanAddItem():
+    co = Checkout()
+    co.addItem("a")
