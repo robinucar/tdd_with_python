@@ -7,3 +7,6 @@ def test_returns1With1PassedIn():
 
 def test_returns2With2PassedIn():
     checkFizzBuzz(2, "2")
+
+def test_returnsfizzWith3PassedIn():
+    checkFizzBuzz(2, "Fizz")
