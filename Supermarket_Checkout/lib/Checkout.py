@@ -1,2 +1,6 @@
+# create class
 class Checkout:
-    pass
+
+    # create add item and price method
+    def addItemPrice(self, item, price):
+        pass
