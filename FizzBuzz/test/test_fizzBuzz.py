@@ -8,5 +8,8 @@ def test_returns1With1PassedIn():
 def test_returns2With2PassedIn():
     checkFizzBuzz(2, "2")
 
-def test_returnsfizzWith3PassedIn():
+def test_returnsFizzWith3PassedIn():
     checkFizzBuzz(3, "Fizz")
+
+def test_returnsBuzzWith5PassedIn():
+    checkFizzBuzz(5, "Buzz")
