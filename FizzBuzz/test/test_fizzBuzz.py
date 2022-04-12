@@ -17,3 +17,7 @@ def test_returnsBuzzWith5PassedIn():
 # returns Fizz with multiple of 3
 def test_returnsFizzWith6PassedIn():
     checkFizzBuzz(6, "Fizz")
+
+# returns Buzz with any multiple of 5
+def test_returnsBuzzWith10PassedIn():
+    checkFizzBuzz(10, "Buzz")
