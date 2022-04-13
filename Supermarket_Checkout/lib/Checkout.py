@@ -1,7 +1,13 @@
 # create class
 class Checkout:
+    class Discount:
+        def __init__(self, nbrItems, price):
+            self.nbrItems = nbrItems
+            self.price = price
+
     def __init__(self):
         self.prices = {}
+        self.discounts = {}
         self.total = 0
     # create add item and price method
     def addItemPrice(self, item, price):
@@ -17,4 +23,6 @@ class Checkout:
 
     # Add discount
     def addDiscount(self, item, nbrOfItems, price):
-        pass
+        discount = self.Discount(nbrOfItems, price)
+        self.discounts[item] = discount
+

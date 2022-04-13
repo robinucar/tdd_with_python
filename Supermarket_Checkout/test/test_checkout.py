@@ -33,4 +33,5 @@ def test_GetCorrectTotalWithMultipleItems(checkout):
 
 
 def test_CanAddDiscountRule(checkout):
-    checkout.addDiscount("a", 3, 2)
+    checkout.addDiscount("a", 3, 2)   # buy 3 pay 2
+
