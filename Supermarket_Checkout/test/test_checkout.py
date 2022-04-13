@@ -8,19 +8,14 @@ def checkout():
     return checkout
 
 
-# Add item price
-def test_CanAddItemPrice(checkout):
-
-    checkout.addItemPrice("a", 1)
-
-# Add Item
-def test_CanAddItem(checkout):
-
-    checkout.addItem("a")
-
 # Calculate total
 
 def test_CanCalculateTotal(checkout):
+    # Add Item Price
     checkout.addItemPrice("a", 1)
+
+    # Add Item
     checkout.addItem("a")
+
+    # Calculate price
     assert checkout.calculateTotal() == 1
