@@ -19,3 +19,13 @@ def test_CanCalculateTotal(checkout):
 
     # Calculate price
     assert checkout.calculateTotal() == 1
+
+# Get Correct Total Amount With Multiple Items
+def test_GetCorrectTotalWithMultipleItems(checkout):
+        checkout.addItemPrice('a', 1)
+        checkout.addItemPrice('b', 2)
+        checkout.addItemPrice('c', 3)
+        checkout.addItem('a')
+        checkout.addItem('b')
+        checkout.addItem('c')
+        assert checkout.calculateTotal() == 6
