@@ -2,9 +2,6 @@ import pytest
 from unittest.mock import MagicMock
 from lib.LineReader import readFromFile
 
-# Call readFromFile
-
-
 # readFromFile returns correct string usin MagicMock
 def test_returnsCorrectString(monkeypatch):
     mock_file = MagicMock()

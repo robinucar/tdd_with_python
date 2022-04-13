@@ -1,2 +1,4 @@
 def readFromFile(filename):
-    pass
+    infile = open(filename, "r")
+    line = infile.readline()
+    return line
