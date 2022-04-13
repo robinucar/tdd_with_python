@@ -1,14 +1,16 @@
 # create class
 class Checkout:
-
+    def __init__(self):
+        self.prices = {}
+        self.total = 0
     # create add item and price method
     def addItemPrice(self, item, price):
-        pass
+        self.prices[item] = price
 
     # add item
     def addItem(self, item):
-        pass
+        self.total += self.prices[item]
 
     # Calculate total
     def calculateTotal(self):
-        return 1
+        return self.total
