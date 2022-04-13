@@ -33,7 +33,7 @@ def test_GetCorrectTotalWithMultipleItems(checkout):
 
 
 def test_CanAddDiscountRule(checkout):
-    checkout.addDiscount("a", 3, 2)   # buy 3 pay 2
+    checkout.addDiscount("a", 3, 2) 
 
 # Apply Discount to the total
 def test_canApplyDiscountRule(checkout):
@@ -42,3 +42,8 @@ def test_canApplyDiscountRule(checkout):
     checkout.addItem('a')
     checkout.addItem('a')
     assert checkout.calculateTotal() == 2
+
+# Exception is thrown for item added without price
+def test_ExceptionWithBadItem(checkout):
+    with pytest.raises(Exception):
+        checkout.addItem("d")
